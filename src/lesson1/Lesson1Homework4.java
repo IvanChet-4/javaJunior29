@@ -1,0 +1,13 @@
+package lesson1;
+
+public class Lesson1Homework4 {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 30; i <= 50; i++) {
+            if (i % 2 == 0) {
+                sum = sum + i;
+            }
+        }
+        System.out.println(sum);
+    }
+}
