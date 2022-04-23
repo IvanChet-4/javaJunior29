@@ -1,6 +1,11 @@
 package homework14;
 
+import java.util.concurrent.*;
+import static java.util.concurrent.TimeUnit.SECONDS;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class IngridGetFridjForRecept {
 
@@ -23,16 +28,38 @@ public class IngridGetFridjForRecept {
     //забрать продукты
     public void getProduct(String product, int value){
         if (!products.containsKey(product)){
-      //      System.out.println("Такого продукта нет-" + product);
-            return;
-        }
-        if (products.get(product) < value){
-        //    System.out.println("Мы взяли только " + products.get(product) + "." + "Еще не хватает - " + (value - products.get(product)) + ".");
-            products.remove(product);
             return;
         }
         products.put(product, products.get(product) - value);
-        //System.out.println("Все взяли - " + product + " " + value);
     }
 
+    public void prepareIngrid() {
+        System.out.println("\n");
+        for (String product:products.keySet()) {
+            System.out.println("Берем " + product + " в количестве " + products.get(product) + " штук ;");
+        }
+        System.out.println("Кидаем в кастрюлю...");
+        System.out.println("Ждем 60 сек...");
+        timer1();
+    }
+
+    public static void timer1() {
+        final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+
+        final Runnable runnable = new Runnable() {
+            int countdownStarter = 60;
+
+            public void run() {
+
+                System.out.println(countdownStarter);
+                countdownStarter--;
+
+                if (countdownStarter < 0) {
+                    System.out.println("Готово!");
+                    scheduler.shutdown();
+                }
+            }
+        };
+        scheduler.scheduleAtFixedRate(runnable, 0, 1, SECONDS);
+    }
 }

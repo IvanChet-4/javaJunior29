@@ -22,24 +22,6 @@ public class Fridj {
         }
     }
 
-
-
-//    public void getProv(String product, int value, String NameFoods, int FoodValue){
-//        if(product == NameFoods){
-//            if (products.get(product) > FoodValue){
-//            System.out.println(product +" - "+ products.get(product) + "этого достаточно для приготовления");
-//        }
-//            if (products.get(product) < FoodValue){
-//                System.out.println(product +" - "+ products.get(product) + "этого не достаточно для приготовления");
-//            }
-//        }else
-//        if(product != NameFoods) {
-//            System.out.println("Такого нет.");
-//        }
-//    }
-//            return 1;
-//        }return 1;}
-
     //взять продукты из холодильника
     public void getProduct(String product, int value) {
         if (!products.containsKey(product)) {
@@ -55,15 +37,30 @@ public class Fridj {
         System.out.println("Все взяли - " + product + " " + value);
     }
 
-
     public int getProvValue(String foods1) {
         for (String product : products.keySet()) {
         if (products.get(foods1) == products.get(product)){
-            System.out.println(products.get(product));
+//          System.out.println(products.get(product));
             return products.get(product);
+            }
         }
-        return 0;
-    }
-        return 0;
+        return 0;}
 }
-}
+
+
+//КАША
+//    public void getProv(String product, int value, String NameFoods, int FoodValue){
+//        if(product == NameFoods){
+//            if (products.get(product) > FoodValue){
+//            System.out.println(product +" - "+ products.get(product) + "этого достаточно для приготовления");
+//        }
+//            if (products.get(product) < FoodValue){
+//                System.out.println(product +" - "+ products.get(product) + "этого не достаточно для приготовления");
+//            }
+//        }else
+//        if(product != NameFoods) {
+//            System.out.println("Такого нет.");
+//        }
+//    }
+//            return 1;
+//        }return 1;}
