@@ -41,62 +41,62 @@ public class Main1 {
 //matrix1.add();
 
         //Создал дублирующую матрицу и у нее заменил значение элементов
-        matrix1.fillMatrix(4);
-        System.out.println("==========");
-
-        //Важно не забывать, что элементу 2,2 присвоено значение 2
-        matrix1.isNullMatrix();
-        System.out.println("==========");
-
-        matrix1.isIdentityMatrix();
-        System.out.println("==========");
-
-
-        matrix1.isSquareMatrix();
-        System.out.println("==========");
-
-        matrix1.printToConsole();
-        System.out.println("==========");
-
-        //IMatrix resultAdd = matrix1.add(matrix2);
-        System.out.println("==========");
-        System.out.println("ADD результат выводим через printToConsole(): ");
-        //resultAdd.printToConsole();
-        System.out.println("==========");
-        //this - matrix1
-        //other - matrix2
-
-        //IMatrix resultSub = matrix1.sub(matrix2);
-        System.out.println("==========");
-        System.out.println("SUB результат выводим через printToConsole() : ");
-        //resultSub.printToConsole();
-        System.out.println("==========");
-
-        //IMatrix resultMul = matrix1.mul(matrix2);
-        System.out.println("==========");
-        System.out.println("MUL результат выводим через printToConsole() : ");
-        //resultMul.printToConsole();
-        System.out.println("==========");
-
-
-        double value = 7;
-        //IMatrix resultMulValue = matrix1.mul(value);
-        System.out.println("==========");
-        System.out.println("MULValue результат выводим через printToConsole() : ");
-        //resultMulValue.printToConsole();
-        System.out.println("==========");
-
-        //IMatrix resultTranspose = matrix1.transpose();
-        System.out.println("==========");
-        System.out.println("Transpose результат выводим через printToConsole() : ");
-        //resultTranspose.printToConsole();
-        System.out.println("==========");
-
-
-        System.out.println("==========");
-        double resultDet = matrix1.determinant();
-        System.out.println("DET : " + resultDet);
-        System.out.println("==========");
+//        matrix1.fillMatrix(4);
+//        System.out.println("==========");
+//
+//        //Важно не забывать, что элементу 2,2 присвоено значение 2
+//        matrix1.isNullMatrix();
+//        System.out.println("==========");
+//
+//        matrix1.isIdentityMatrix();
+//        System.out.println("==========");
+//
+//
+//        matrix1.isSquareMatrix();
+//        System.out.println("==========");
+//
+//        matrix1.printToConsole();
+//        System.out.println("==========");
+//
+//        //IMatrix resultAdd = matrix1.add(matrix2);
+//        System.out.println("==========");
+//        System.out.println("ADD результат выводим через printToConsole(): ");
+//        //resultAdd.printToConsole();
+//        System.out.println("==========");
+//        //this - matrix1
+//        //other - matrix2
+//
+//        //IMatrix resultSub = matrix1.sub(matrix2);
+//        System.out.println("==========");
+//        System.out.println("SUB результат выводим через printToConsole() : ");
+//        //resultSub.printToConsole();
+//        System.out.println("==========");
+//
+//        //IMatrix resultMul = matrix1.mul(matrix2);
+//        System.out.println("==========");
+//        System.out.println("MUL результат выводим через printToConsole() : ");
+//        //resultMul.printToConsole();
+//        System.out.println("==========");
+//
+//
+//        double value = 7;
+//        //IMatrix resultMulValue = matrix1.mul(value);
+//        System.out.println("==========");
+//        System.out.println("MULValue результат выводим через printToConsole() : ");
+//        //resultMulValue.printToConsole();
+//        System.out.println("==========");
+//
+//        //IMatrix resultTranspose = matrix1.transpose();
+//        System.out.println("==========");
+//        System.out.println("Transpose результат выводим через printToConsole() : ");
+//        //resultTranspose.printToConsole();
+//        System.out.println("==========");
+//
+//
+//        System.out.println("==========");
+//        double resultDet = matrix1.determinant();
+//        System.out.println("DET : " + resultDet);
+//        System.out.println("==========");
 
 
     }

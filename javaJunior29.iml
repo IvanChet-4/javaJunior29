@@ -11,7 +11,23 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/log4j-1.2.17.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/04052022/Others/commons-io-2.11.0.jar!/" />
+          <root url="jar://$USER_HOME$/Desktop/04052022/Others/log4j-1.2.17.jar!/" />
+          <root url="file://$USER_HOME$/Desktop/04052022/Others" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Desktop/04052022/Others" />
+          <root url="file://$USER_HOME$/Desktop/04052022/Others/Video" />
+          <root url="file://$USER_HOME$/Desktop/04052022/Others/lesson1" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Desktop/04052022/Others" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/guava-io-r03.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
